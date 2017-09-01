@@ -1,57 +1,80 @@
-# Project Name
+# React CosmosDB
 
-(short, 1-3 sentenced, description of the project)
+This is a demo project for the React CosmosDB video series that shows how to...
 
-## Features
+* Setup a React / Node application
+* Create, Read, Update and Delete data from CosmosDB with the Mongo API
+* Debug React and Node apps
+* Scale and replicate CosmosDB
 
-This project framework provides the following features:
+Follow along with the video series. React is a blast and CosmosDB is crazy fast. Building this app is way too much fun.
 
-* Feature 1
-* Feature 2
-* ...
+## Get Started
 
-## Getting Started
+1. Clone this repository
 
-### Prerequisites
+```bash
+git clone https://github.com/burkeholland/react-cosmosdb.git
+```
 
-(ideally very short, if any)
+2. Change into the directory that was cloned and run `npm install`
 
-- OS
-- Library version
-- ...
+```bash
+cd react-cosmosdb && npm install
+```
 
-### Installation
+3. Configure the CosmosDB Server Setting
 
-(ideally very short)
+Rename `server/env/environment-change-me.js` to `environment.js` and change the `cosmosPort`, `dbName` and `key` to match your CosmosDB environment.
 
-- npm install [package name]
-- mvn install
-- ...
+```javascript
+// server/env/environment.js
+const cosmosPort = 1234; // replace with your port
+const dbName = 'your-cosmos-db-name-goes-here';
+const key = 'your-key-goes-here';
 
-### Quickstart
-(Add steps to get up and running quickly)
+module.exports = {
+  cosmosPort,
+  dbName,
+  key
+};
+```
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+## Running The App
 
+In development, the app runs via two separate processes...
 
-## Demo
+### Start the Express Server
 
-A demo app is included to show how to use the project.
+```bash
+node server/server.js
+```
 
-To run the demo, follow these steps:
+### Start Create React App
 
-(Add steps to start up the demo)
+In a different terminal tab...
 
-1.
-2.
-3.
+```bash
+npm start
+```
 
-## Resources
+## Building For Production
 
-(Any additional resources or related projects)
+In production, you want Express to serve up your app.
 
-- Link to supporting information
-- Link to similar sample
-- ...
+### Build React App
+
+```bash
+npm build
+```
+
+Now start the Express server from the server folder
+
+```bash
+cd server
+npm start
+```
+
+Your entire application is now running on port 3001.
+
+Everything in the `server` folder is what is needed in production. Those are all of the build assets. 

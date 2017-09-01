@@ -1,0 +1,153 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Arial;
+}
+
+h2 {
+    color: #444;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body,
+input[text],
+button {
+    color: #888;
+}
+
+button {
+    font-size: 14px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+button:hover {
+    background-color: #cfd8dc;
+}
+button.delete-button {
+    float: right;
+    background-color: gray !important;
+    background-color: #d83b01 !important;
+    color: white;
+    padding: 4px;
+    position: relative;
+    font-size: 12px;
+}
+
+div {
+    margin: .1em;
+}
+
+.selected {
+    background-color: #cfd8dc !important;
+    background-color: #0078d7 !important;
+    color: white;
+}
+
+.heroes {
+    float: left;
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+}
+.heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #eee;
+    margin: .5em;
+    padding: .5em;
+    height: 3.0em;
+    border-radius: 4px;
+    width: 17em;
+}
+.heroes li:hover {
+    color: #607d8b;
+    color: #0078d7;
+    background-color: #ddd;
+    left: .1em;
+}
+.heroes li.selected:hover {
+    /*background-color: #BBD8DC !important;*/
+    color: white;
+}
+.heroes .text {
+    position: relative;
+    top: -3px;
+}
+.heroes .saying {
+    margin: 5px 0;
+}
+.heroes .name {
+    font-weight: bold;
+}
+.heroes .badge {
+    /* display: inline-block; */
+    float: left;
+    font-size: small;
+    color: white;
+    padding: 0.7em 0.7em 0 0.5em;
+    background-color: #607d8b;
+    background-color: #0078d7;
+    background-color: #86b7dd;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 3.0em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    width: 1.2em;
+}
+
+.header-bar {
+    background-color: #0078d7;
+    height: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 4em;
+    margin: .5em 0;
+    color: #888;
+}
+label.value {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+}
+input::placeholder {
+    color: lightgray;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.editarea {
+    float: left;
+}
+.editarea input {
+    margin: 4px;
+    height: 20px;
+    color: #0078d7;
+}
+.editarea button {
+    margin: 8px;
+}
+.editarea .editfields {
+    margin-left: 12px;
+}
