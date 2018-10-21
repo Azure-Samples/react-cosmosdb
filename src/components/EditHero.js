@@ -1,45 +1,45 @@
 import React from 'react';
 
-const EditHero = props => {
-  if (props.selectedHero) {
+const EditHero = ({ selectedHero, addingHero, onChange, onSave, onCancel }) => {
+  if (selectedHero) {
     return (
       <div>
         <div className="editfields">
           <div>
             <label>id: </label>
-            {props.addingHero
+            {addingHero
               ? <input
                   type="number"
                   name="id"
                   placeholder="id"
-                  value={props.selectedHero.id}
-                  onChange={props.onChange}
+                  value={selectedHero.id}
+                  onChange={onChange}
                 />
               : <label className="value">
-                  {props.selectedHero.id}
+                  {selectedHero.id}
                 </label>}
           </div>
           <div>
             <label>name: </label>
             <input
               name="name"
-              value={props.selectedHero.name}
+              value={selectedHero.name}
               placeholder="name"
-              onChange={props.onChange}
+              onChange={onChange}
             />
           </div>
           <div>
             <label>saying: </label>
             <input
               name="saying"
-              value={props.selectedHero.saying}
+              value={selectedHero.saying}
               placeholder="saying"
-              onChange={props.onChange}
+              onChange={onChange}
             />
           </div>
         </div>
-        <button onClick={props.onCancel}>Cancel</button>
-        <button onClick={props.onSave}>Save</button>
+        <button onClick={onCancel}>Cancel</button>
+        <button onClick={onSave}>Save</button>
       </div>
     );
   } else {
