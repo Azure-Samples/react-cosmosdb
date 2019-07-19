@@ -11,7 +11,7 @@ description: "This is a demo project for the React CosmosDB video series."
 
 # React CosmosDB
 
-This is a demo project for the React CosmosDB video series that shows how to...
+This is a demo project for the React CosmosDB video series that shows how to:
 
 * Setup a React / Node application
 * Create, Read, Update and Delete data from CosmosDB with the Mongo API
