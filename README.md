@@ -1,3 +1,10 @@
+---
+languages: []
+page_type: sample
+products:
+- azure
+---
+
 # React CosmosDB
 
 This is a demo project for the React CosmosDB video series that shows how to...
@@ -77,4 +84,4 @@ npm start
 
 Your entire application is now running on port 3001.
 
-Everything in the `server` folder is what is needed in production. Those are all of the build assets. 
+Everything in the `server` folder is what is needed in production. Those are all of the build assets.
