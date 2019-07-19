@@ -1,8 +1,12 @@
 ---
-languages: []
+languages:
+- javascript
+- nodejs
 page_type: sample
 products:
 - azure
+- azure-cosmos-db
+description: "This is a demo project for the React CosmosDB video series."
 ---
 
 # React CosmosDB
