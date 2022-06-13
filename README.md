@@ -6,19 +6,19 @@ page_type: sample
 products:
 - azure
 - azure-cosmos-db
-description: "This is a demo project for the React CosmosDB video series."
+description: "This is a demo project for the React Cosmos DB video series."
 ---
 
-# React CosmosDB
+# React Cosmos DB
 
-This is a demo project for the React CosmosDB video series that shows how to:
+This is a demo project for the React Cosmos DB video series that shows how to:
 
 * Setup a React / Node application
-* Create, Read, Update and Delete data from CosmosDB with the Mongo API
+* Create, Read, Update and Delete data from Cosmos DB with the Mongo API
 * Debug React and Node apps
-* Scale and replicate CosmosDB
+* Scale and replicate Cosmos DB
 
-Follow along with the video series. React is a blast and CosmosDB is crazy fast. Building this app is way too much fun.
+Follow along with the video series. React is a blast and Cosmos DB is crazy fast. Building this app is way too much fun.
 
 ## Get Started
 
@@ -34,9 +34,9 @@ git clone https://github.com/burkeholland/react-cosmosdb.git
 cd react-cosmosdb && npm install
 ```
 
-3. Configure the CosmosDB Server Setting
+3. Configure the Cosmos DB Server Setting
 
-Rename `server/env/environment-change-me.js` to `environment.js` and change the `cosmosPort`, `dbName` and `key` to match your CosmosDB environment.
+Rename `server/env/environment-change-me.js` to `environment.js` and change the `cosmosPort`, `dbName` and `key` to match your Cosmos DB environment.
 
 ```javascript
 // server/env/environment.js
