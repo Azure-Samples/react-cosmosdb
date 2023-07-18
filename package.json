@@ -10,7 +10,7 @@
     "eslint-config-airbnb": "^15.1.0",
     "express": "^4.15.3",
     "mongodb": "^3.1.13",
-    "mongoose": "^4.11.5",
+    "mongoose": "^5.13.20",
     "morgan": "^1.8.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
